@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
+
+        <title>Afro Babe Salon</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://kit.fontawesome.com/09781f2dd3.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/pricing.css">
+        <link rel="stylesheet" href="css/main.css">
+
+
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+                 animation: "slide",
+                 controlsContainer: ".flexslider-container"
+                });
+            });
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            function initialize() {
+                var mapCanvas = document.getElementById('map-canvas');
+                var mapOptions = {
+                    center: new google.maps.LatLng(24.909439, 91.833800),
+                    zoom: 16,
+                    scrollwheel: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(mapCanvas, mapOptions)
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(24.909439, 91.833800),
+                    title:"Mamma's Kitchen Restaurant"
+                });
+
+                // To add the marker to the map, call setMap();
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+
+    </head>
+    <body data-spy="scroll" data-target="#template-navbar">
+
+        <!--== 4. Navigation ==-->
+        <nav id="template-navbar" class="navbar navbar-default custom-navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Food-fair-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img id="logo" src="./images/logo1.png" width="130px"  height="200px" class="">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="Food-fair-toggle">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#header-slider" style="font-size: 15px; font-weight: 400;">Home</a></li>
+                        <li><a href="#about" style="font-size: 15px; font-weight: 400;">About</a></li>
+                        <li><a href="#breakfast" style="font-size: 15px; font-weight: 400;">Services</a></li>
+                        <li><a href="#have-a-look" style="font-size: 15px; font-weight: 400;">Gallery</a></li>
+                        <li><a href="#contact" style="font-size: 15px; font-weight: 400;">Contact</a></li>
+                        <li><a href="#reserve" style="font-size: 15px; font-weight: 400;">Appointment</a></li>
+                        <li><a href="#contact" style="font-size: 15px; font-weight: 400;"></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.row -->
+        </nav>
+
+
+        <!--== 5. Header ==-->
+        <section id="header-slider" class="owl-carousel">
+            <div class="item">
+                <div class="container">
+                    <div class="header-content">
+                        <h1 class="header-title" style="color: #fff;">STANDOUT BRAIDS</h1>
+                        <p class="header-sub-title" style="color: #fff;">look alluring in braid styles</p>
+                    </div> <!-- /.header-content -->
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="header-content">
+                        <h1 class="header-title" style="color: black;">BEST GROOMING SESSIONS</h1>
+                        <p class="header-sub-title" style="color:black;">have clean and well groomed nails</p>
+                    </div> <!-- /.header-content -->
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="header-content text-right pull-right">
+                        <h1 class="header-title" style="color: #fff;">BEAUTIFUL MAKEUP</h1>
+                        <p class="header-sub-title" style="color: #fff;">beautiful makeovers</p>
+                    </div> <!-- /.header-content -->
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--== 6. About us ==-->
+        <section id="about" class="about">
+            <img src="" class="img-responsive section-icon hidden-sm hidden-xs">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row dis-table">
+                        <div class="hidden-xs col-sm-6 section-bg about-bg dis-table-cell">
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 dis-table-cell">
+                            <div class="section-content">
+                                <h2 class="section-content-title" style="font-style: italic; font-weight: 400;">About us</h2>
+                                <p class="section-content-para" style="font-size: 25px;">
+                                   We are a beauty salon that offers a variety of cosmetic treatments and cosmetic services for women, including professional hair cutting and styling, manicures and pedicures, and often cosmetics, makeup and makeovers.</p>
+                                <p class="section-content-para">
+                                    <!-- beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.  Where ignorance lurks, so too do the frontiers of discovery and imagination. -->
+                                </p>
+                            </div> <!-- /.section-content -->
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.container-fluid -->
+            </div> <!-- /.wrapper -->
+        </section> <!-- /#about -->
+
+
+        <!--==  7. Beautiful Hairstyles  ==-->
+        <section id="pricing" class="pricing">
+            <div id="w">
+                <div class="pricing-filter">
+                    <div class="pricing-filter-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="section-header">
+                                        <h2 class="pricing-title">Beautiful Hairstyles</h2>
+                                        <ul id="filter-list" class="clearfix">
+                                            <li class="filter" data-filter="all"  style="color: #fff; font-weight: bolder;">All</li>
+                                            <li class="filter" data-filter=".braids" style="color: #fff; font-weight: bolder;">Braids</li>
+                                            <li class="filter" data-filter=".crochet" style="color: #fff; font-weight: bolder;">Crochet</li>
+                                            <li class="filter" data-filter=".cornrows" style="color: #fff; font-weight: bolder;">Cornrows</li>
+                                            <li class="filter" data-filter=".ponytail" style="color: #fff; font-weight: bolder;">Ponytail</li>
+                                        </ul><!-- @end #filter-list -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">  
+                        <div class="col-md-10 col-md-offset-1">
+                            <ul id="menu-pricing" class="menu-price">
+                                <li class="item braids">
+
+                                    <a href="#">
+                                        <img src="./images/girl14.jpg" width="280px" height="50px" class="img-responsive" alt="box braids" >
+                                        <div class="menu-desc text-center" style="filter: opacity(70%);">
+                                            <span>
+                                                <h3>Box Braids</h3>
+                                                Box braids can add length and even a stylish flare to your outfit — all while tucking your curls away to keep them protected and healthy.
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white"></h2>
+                                </li>
+
+                                <li class="item crochet">
+
+                                    <a href="#">
+                                        <img src="./images/crochet.jpg" width="280px" height="250px" class="img-responsive" alt="crochet hair" >
+                                        <div class="menu-desc" style="filter: opacity(70%);">
+                                            <span>
+                                                <h3>Crochet</h3>
+                                                Crochet braids are cute protective styles, which require little maintenance and are incredibly easy to install or take down. Standout any day!
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white"></h2>
+                                </li>
+                                <li class="item cornrows">
+
+                                    <a href="#">
+                                        <img src="./images/afrohair8.jpg" width="280px" height="278px" class="" alt="afro hair" >
+                                        <div class="menu-desc" style="filter: opacity(70%);">
+                                            <span>
+                                                <h3>Cornrows</h3>
+                                                Cornrows are great protective styles for your hair to help you look cute and gorgeous. </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white"></h2>
+                                </li>
+                                <li class="item ponytail">
+
+                                    <a href="#">
+                                        <img src="./images/ponytail.jpg" width="280px"  height="278px" class="img-responsive" alt="ponytail" >
+                                        <div class="menu-desc" style="filter: opacity(70%);">
+                                            <span>
+                                                <h3>Ponytail Braids</h3>
+                                                The pony tail braids are long, sleek and can be put into a high-up, half-down style. Look charming and alluring in this unique style.
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white"></h2>
+                                </li>
+                                <li class="item cornrows">
+
+                                    <a href="#">
+                                        <img src="images/cornrows2.jpg" width="280px"  height="297px" class="" alt="cornrows" >
+                                        <div class="menu-desc" style="filter: opacity(70%);">
+                                            <span>
+                                                <h3>Cornrows</h3>
+                                                Cornrows are great protective styles for your hair to help you look cute and gorgeous.
+                                            </span>
+                                        </div>
+                                    </a>
+                                        
+                                    <h2 class="white"></h2>
+                                </li>
+                                <li class="item crochet">
+
+                                    <a href="#">
+                                        <img src="./images/crochet2.jpg" width="280px"  height="297px" class="" alt="crochet hair" >
+                                        <div class="menu-desc" style="filter: opacity(70%);">
+                                            <span>
+                                                <h3>Crochet</h3>
+                                                Crochet braids are cute protective styles, which require little maintenance and are incredibly easy to install or take down. Standout any day!
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <h2 class="white"></h2>
+                                </li>
+                                <li class="item braids">
+
+                                    <a href="#">
+                                        <img src="./images/knotless.jpg"  width="280px"  height="297px" class="" alt="knotless braids" >
+                                        <div class="menu-desc" style="filter: opacity(70%);">
+                                            <span>
+                                                <h3>Knotless braids</h3>
+                                                Knotless braids give a seamless natural look because of how they're installed,it is a low Maintenance styles that makes you look sleek and beautiful.
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <h2 class="white"></h2>
+                                </li>
+                                <li class="item ponytail">
+
+                                    <a href="#">
+                                        <img src="./images/ponytail2.jpg" width="280px"  height="297px" class="" alt="ponytail braids" >
+                                        <div class="menu-desc" style="filter: opacity(70%);">
+                                            <span>
+                                                <h3>Ponytail braids</h3>
+                                                The pony tail braids are long, sleek and can be put into a high-up, half-down style. Look charming and alluring in this unique style.
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                    <h2 class="white"></h2>
+                                </li>
+                                <li class="item braids">
+
+                                    <a href="#">
+                                        <img src="./images/longbraids.jpg" width="280px"  height="297px" class="" alt="long braids" >
+                                        <div class="menu-desc" style="filter: opacity(70%);">
+                                            <span>
+                                                <h3>Long Braids</h3>
+                                                Long braids are the most versatile protective style you can wear. They're fun, and playful and add extra detail and texture to your locks. Long braids are the perfect way to give natural hair some added flair.
+                                            </span>
+                                        </div>
+                                    </a>
+                                    
+                                    <h2 class="white"></h2>
+                                </li>  
+                            </ul>
+
+                            <!-- <div class="text-center">
+                                    <a id="loadPricingContent" class="btn btn-middle hidden-sm hidden-xs">Load More <span class="caret"></span></a>
+                            </div> -->
+
+                        </div>   
+                    </div>
+                </div>
+
+            </div> 
+        </section>
+
+
+        <!--== 8. Great Place to enjoy ==-->
+        <section id="great-place-to-enjoy" class="great-place-to-enjoy">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row dis-table">
+                        <div class="col-xs-6 col-sm-6 dis-table-cell color-bg" style="background: #008080;">
+                            <h2 class="section-title">Beauty comes from inside...,<br>
+                            Inside the Beauty Salon</h2>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
+                            
+                        </div>
+                    </div> <!-- /.dis-table -->
+                </div> <!-- /.row -->
+            </div> <!-- /.wrapper -->
+        </section> <!-- /#great-place-to-enjoy -->
+
+
+
+        <!--==  9. Our Beer  ==-->
+        <section id="beer" class="beer">
+            <img class="" src="" >
+            <div class="container-fluid"  style="background: pink;">
+                <div class="row dis-table">
+                    <div class="hidden-xs col-sm-6 dis-table-cell section-bg">
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 dis-table-cell"  style="background: pink;">
+                        <div class="section-content" style="background: pink;">
+                            <h2 class="section-content-title" style="margin-top: 50px; font-style: italic; font-weight: 400;">Our Vision</h2>
+                            <div class="section-description" >
+                                <p class="section-content-para" style="font-size: 18px;">
+                                    To be a haven of rejuvenation that celebrates the unique beauty, significance, and value of women of every culture, inspire confidence and enhance our clients' natural beauty through our expert services, exceptional customer care, and commitment to excellence</p>
+                                <p class="section-content-para" style="font-size: 18px;">
+                                    At our salon, we believe beauty is a form of self-expression, and our mission is to help our clients unleash their creativity and express their unique style through our services. It’s our goal to promote a culture of self-care and wellness, where every client can relax, recharge, and rejuvenate their mind, body, and soul.
+We’re passionate about beauty and are committed to staying on top of the latest trends and techniques to bring you the very best hair, makeup, and skin care services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--== 10. Our Breakfast Menu ==-->
+        <section id="breakfast" class="breakfast">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row dis-table">
+                        <div class="col-xs-6 col-sm-6 dis-table-cell color-bg" style="background:#008080 ;">
+                            <h2 class="section-title" style="font-weight: 300; font-style: italic;">We offer Manicure and Pedicure Services </h2>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
+                            
+                        </div>
+                    </div> <!-- /.dis-table -->
+                </div> <!-- /.row -->
+            </div> <!-- /.wrapper -->
+        </section> <!-- /#breakfast -->
+
+
+
+        <!--== 11. Our Bread ==-->
+        <section id="bread" class="bread">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="">
+            <div class="container-fluid">
+                <div class="row dis-table">
+                    <div class="hidden-xs col-sm-6 dis-table-cell section-bg">
+
+                    </div>
+                    <div class="col-xs-12 col-sm-6 dis-table-cell">
+                        <div class="section-content" style="background: pink;">
+                            <h2 class="section-content-title" style="font-weight: 350; font-style: italic;">
+                                Relax and Rejuvenate with our Spa Services
+                            </h2>
+                            <div class="section-description">
+                                <p class="section-content-para">
+                                   
+                                </p>
+                                <p class="section-content-para">
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!--== 12. Our Featured Dishes Menu ==-->
+        <section id="featured-dish" class="featured-dish">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row dis-table">
+                        <div class="col-xs-6 col-sm-6 dis-table-cell color-bg" style="background: #008080;">
+                            <h2 class="section-title" style="font-style: italic; font-weight: 350px;">Re-boost your hair with our hair treatment services</h2>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
+                            
+                        </div>
+                    </div> <!-- /.dis-table -->
+                </div> <!-- /.row -->
+            </div> <!-- /.wrapper -->
+        </section> <!-- /#featured-dish -->
+
+
+
+
+        <!--== 13. Menu List ==-->
+        <!-- <section id="menu-list" class="menu-list">
+            <div class="container">
+                <div class="row menu">
+                    <div class="col-md-10 col-md-offset-1 col-sm-9 col-sm-offset-2 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="menu-catagory">
+                                        <h2>Bread</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">French Bread</h3>
+                                        <p class="menu-about">Astronomy compels the soul</p>
+
+                                        <div class="menu-system">
+                                            <div class="half">
+                                                <p class="per-head">
+                                                    <span><i class="fa fa-user"></i></span>1:1
+                                                </p>
+                                            </div>
+                                            <div class="half">
+                                                <p class="price">$149.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Italian Bread</h3>
+                                        <p class="menu-about">Astronomy compels the soul</p>
+
+                                        <div class="menu-system">
+                                            <div class="half">
+                                                <p class="per-head">
+                                                    <span><i class="fa fa-user"></i></span>1:1
+                                                </p>
+                                            </div>
+                                            <div class="half">
+                                                <p class="price">$149.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Regular Bread</h3>
+                                        <p class="menu-about">Astronomy compels the soul</p>
+
+                                        <div class="menu-system">
+                                            <div class="half">
+                                                <p class="per-head">
+                                                    <span><i class="fa fa-user"></i></span>1:1
+                                                </p>
+                                            </div>
+                                            <div class="half">
+                                                <p class="price">$149.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="menu-catagory">
+                                        <h2>Drinks</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Regular Tea</h3>
+                                        <p class="menu-about">Astronomy compels the soul</p>
+
+                                        <div class="menu-system">
+                                            <div class="half">
+                                                <p class="per-head">
+                                                    <span><i class="fa fa-user"></i></span>1:1
+                                                </p>
+                                            </div>
+                                            <div class="half">
+                                                <p class="price">$20.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Garlic Tea</h3>
+                                        <p class="menu-about">Astronomy compels the soul</p>
+
+                                        <div class="menu-system">
+                                            <div class="half">
+                                                <p class="per-head">
+                                                    <span><i class="fa fa-user"></i></span>1:1
+                                                </p>
+                                            </div>
+                                            <div class="half">
+                                                <p class="price">$30.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Black Coffee</h3>
+                                        <p class="menu-about">Astronomy compels the soul</p>
+
+                                        <div class="menu-system">
+                                            <div class="half">
+                                                <p class="per-head">
+                                                    <span><i class="fa fa-user"></i></span>1:1
+                                                </p>
+                                            </div>
+                                            <div class="half">
+                                                <p class="price">$40.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="menu-catagory">
+                                        <h2>Meat</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Bacon</h3>
+                                        <p class="menu-about">Astronomy compels the soul</p>
+
+                                        <div class="menu-system">
+                                            <div class="half">
+                                                <p class="per-head">
+                                                    <span><i class="fa fa-user"></i></span>1:1
+                                                </p>
+                                            </div>
+                                            <div class="half">
+                                                <p class="price">$70.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Sausage</h3>
+                                        <p class="menu-about">Astronomy compels the soul</p>
+
+                                        <div class="menu-system">
+                                            <div class="half">
+                                                <p class="per-head">
+                                                    <span><i class="fa fa-user"></i></span>1:1
+                                                </p>
+                                            </div>
+                                            <div class="half">
+                                                <p class="price">$50.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Chicken Balls</h3>
+                                        <p class="menu-about">Astronomy compels the soul</p>
+
+                                        <div class="menu-system">
+                                            <div class="half">
+                                                <p class="per-head">
+                                                    <span><i class="fa fa-user"></i></span>1:1
+                                                </p>
+                                            </div>
+                                            <div class="half">
+                                                <p class="price">$90.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="menu-catagory">
+                                        <h2>Special</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Chicken Balls</h3>
+                                        <p class="menu-about">Astronomy compels the soul</p>
+
+                                        <div class="menu-system">
+                                            <div class="half">
+                                                <p class="per-head">
+                                                    <span><i class="fa fa-user"></i></span>1:1
+                                                </p>
+                                            </div>
+                                            <div class="half">
+                                                <p class="price">$90.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Bacon</h3>
+                                        <p class="menu-about">Astronomy compels the soul</p>
+
+                                        <div class="menu-system">
+                                            <div class="half">
+                                                <p class="per-head">
+                                                    <span><i class="fa fa-user"></i></span>1:1
+                                                </p>
+                                            </div>
+                                            <div class="half">
+                                                <p class="price">$70.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="menu-item">
+                                        <h3 class="menu-title">Sausage</h3>
+                                        <p class="menu-about">Astronomy compels the soul</p>
+
+                                        <div class="menu-system">
+                                            <div class="half">
+                                                <p class="per-head">
+                                                    <span><i class="fa fa-user"></i></span>1:1
+                                                </p>
+                                            </div>
+                                            <div class="half">
+                                                <p class="price">$50.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="moreMenuContent"></div>
+                        <div class="text-center">
+                            <a id="loadMenuContent" class="btn btn-middle hidden-sm hidden-xs">Load More <span class="caret"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+
+        <!--== 14. Have a look to our dishes ==-->
+
+        <section id="have-a-look" class="have-a-look hidden-xs">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="menu-gallery" style="width: 50%; float:left;">
+                            <div class="flexslider-container">
+                                <div class="flexslider">
+                                    <ul class="slides">
+                                        <li>
+                                            <img src="./images/afropedicure2.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="./images/manicure.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="./images/spa2.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="./images/makeup6.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="./images/girlie2.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="./images/girl5.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="./images/girl3.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="./images/cornrows1.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="./images/makeup2.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="./images/makeup5.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="./images/girl2.jpg" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-heading hidden-xs color-bg" style="width: 50%; height: 300px; background: pink; float:right;">
+                            <h2 class="section-title" style="font-style: italic; font-weight: 300; color: black;">Gallery</h2>
+                        </div>
+                        
+
+                    </div> <!-- /.row -->
+                </div> <!-- /.container-fluid -->
+            </div> <!-- /.wrapper -->
+        </section>
+
+
+
+
+        <!--== 15. Reserve A Table! ==-->
+        <section id="reserve" class="reserve">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class="row dis-table">
+                        <div class="col-xs-6 col-sm-6 dis-table-cell color-bg" style="background: #008080;">
+                            <h2 class="section-title">Book a session with us</h2>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 dis-table-cell section-bg">
+                            
+                        </div>
+                    </div> <!-- /.dis-table -->
+                </div> <!-- /.row -->
+            </div> <!-- /.wrapper -->
+        </section> <!-- /#reserve -->
+
+
+
+        <section class="reservation">
+            <img class="img-responsive section-icon hidden-sm hidden-xs" src="">
+            <div class="wrapper">
+                <div class="container-fluid">
+                    <div class=" section-content">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-6">
+                                <form class="reservation-form" method="post" action="https://wa.me/08176042780">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control reserve-form empty iconified" name="name" id="name" required="required" placeholder="  &#xf007;  Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" name="email" class="form-control reserve-form empty iconified" id="email" required="required" placeholder="  &#xf1d8;  e-mail">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+                                                <input type="tel" class="form-control reserve-form empty iconified" name="phone" id="phone" required="required" placeholder="  &#xf095;  Phone">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control reserve-form empty iconified" name="datepicker" id="datepicker" required="required" placeholder="&#xf017;  Time">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-12">
+                                            <textarea type="text" name="message" class="form-control reserve-form empty iconified" id="message" rows="3" required="required" placeholder="  &#xf086;  We're listening"></textarea>
+                                        </div>
+
+                                        <div class="col-md-12 col-sm-12">
+                                            <a href="https://wa.me/08176042780"><button type="submit" id="submit" name="submit" class="btn btn-reservation" style="background: #008080;">
+                                                <span><i class="fa fa-check-circle-o"></i></span>
+                                                Book a session
+                                            </button></a>
+                                        </div>
+                                            
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-md-2 hidden-sm hidden-xs"></div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="opening-time" style="background: #008080;">
+                                    <h3 class="opening-time-title"> Working Hours</h3>
+                                    <p>Mon: 9:00 AM - 6:00 PM</p>
+                                    <p>Tues: 9:00 AM - 6:00 PM</p>
+
+                                    <div class="launch">
+                                        <h4></h4>
+                                        <p>Wed: 9:00 AM - 6:00 PM
+                                           Thurs: 9:00 AM - 6:00 PM
+                                        </p>
+                                    </div>
+
+                                    <div class="dinner">
+                                        <h4></h4>
+                                        <p></p>
+                                        <p>Fri: 9:00 AM - 6:00 PM
+                                            Sat: 9:00 AM - 6:00 PM
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="contact" class="contact">
+            <div class="container-fluid color-bg" style="background:#008080;">
+                <div class="row dis-table" style="background: #008080;">
+                    <div class="hidden-xs col-sm-6 dis-table-cell">
+                        <h2 class="section-title" style="color: #fff; font-weight: 300;">Contact Us</h2>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 dis-table-cell">
+                        <div class="section-content" >
+                            <p  style="color:#fff; font-weight: 500;">40 Esuola Street, Ago place Road. Okota, Lagos, Nigeria.</p>
+                            <p style="color:#fff; font-weight: 500;">+234 8176042780</p>
+                            <p style="color: #fff; font-weight: 500;">chinwe_martins01@gmail.com </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-menu">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <ul class="center-block">
+                                <!-- <li><a href="#" class="fb"></a></li>
+                                <li><a href="#" class="twit"></a></li>
+                                <li><a href="#" class="g-plus"></a></li>
+                                <li><a href="#" class="link"></a></li> -->
+                                <li><a href="https://www.facebook.com/chinwe.martins.50"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="https://twitter.com/ChinweMartins1"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="https://instagram.com/affiliate.marketinghub?igshid=MzNlNGNkZWQ4Mg=="><i class="fa fa-instagram"></i></a></li>
+                          <li><a href="https://wa.me/8176042780"><i class="fa fa-whatsapp"></i></a></li>
+                          <li><a href="https://www.linkedin.com/in/chinwe-martins-51ab13202/"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div id="map-canvas"></div>
+            </div>
+        </div>
+
+
+
+        <section class="contact-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                        <div class="row">
+                             <form class="contact-form" method="post" action="https://wa.me/08176042780">
+                                
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <input  name="name" type="text" class="form-control" id="name" required="required" placeholder="  Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="email" type="email" class="form-control" id="email" required="required" placeholder="  Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input name="subject" type="text" class="form-control" id="subject" required="required" placeholder="  Subject">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6">
+                                    <textarea name="message" type="text" class="form-control" id="message" rows="7" required="required" placeholder="  Message"></textarea>
+                                </div>
+
+                                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                                    <div class="text-center">
+                                        <a href="https://wa.me/08176042780"><button type="submit" id="submit" name="" class="btn btn-send" style="background: #008080;">Send </button></a>
+                                        
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="copyright text-center">
+                            <p>
+                                &copy; Copyright, 2023 <a href="#">Your Website Link.</a><a href="http://themewagon.com/"  target="_blank">ThemeWagon</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+        <script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+        <script src="js/script.js"></script>
+        
+
+    </body>
+</html>
